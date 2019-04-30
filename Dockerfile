@@ -11,7 +11,7 @@ RUN yum upgrade -y \
     && mkdir -p /source \
     && curl -s http://www.bratch.co.uk/udprelay/files/udprelay-1.2.tar.gz | tar -xzC /source \
 
-    ## Compile out code
+    ## Compile our code
     && cc -O /source/udprelay-1.2/udprelay.c -o /udprelay
 
 ## Start here
